@@ -1,0 +1,137 @@
+﻿
+https://medium.com/scisharp/numsharp-the-c-port-of-numpy-af80a37820a5
+
+https://github.com/orgs/SciSharp/repositories
+
+
+https://github.com/SciSharp/Numpy.NET
+High Performance Computation for N-D Tensors in .NET, similar API to NumPy.
+
+
+https://github.com/SciSharp/Pandas.NET
+Pandas port for C# and F#, data analysis tool, process multi-dim array in DataFrame.
+
+
+https://github.com/SciSharp/Keras.NET
+Keras.NET is a high-level neural networks API for C# and F#, with Python Binding and capable of running on top of TensorFlow, CNTK, or Theano.
+
+https://github.com/SciSharp/TensorFlow.NET
+A lightweight and high-performance tensor library which provides numpy-like operations but .NET style interfaces. It supports generic tensor, Linq, C# native slices and so on. (Qushui student project))
+https://github.com/SciSharp/tensorflow-net-docs
+
+
+https://github.com/SciSharp/Gym.NET
+openai/gym's popular toolkit for developing and comparing reinforcement learning algorithms port to C#.
+
+
+https://github.com/SciSharp/SciSharp.Models
+Image Classification, Time Series, Transformer, Object Detection
+
+
+https://github.com/SciSharp/SciSharp-Stack-Examples
+Practical examples written in SciSharp's machine learning libraries
+
+
+
+
+
+https://github.com/SciSharp/Tensor.NET
+A lightweight and high-performance tensor library which provides numpy-like operations but .NET style interfaces. It supports generic tensor, Linq, C# native slices and so on. (Qushui student project))
+
+
+https://github.com/SciSharp/SharpCV
+A Computer Vision library for C# and F# that combines OpenCV and NDArray together in .NET Standard.
+
+
+https://github.com/SciSharp/CherubNLP
+Natural Language Processing in .NET Core
+
+
+
+https://github.com/SciSharp/Seq2SeqSharp
+Seq2SeqSharp is a tensor based fast & flexible encoder-decoder deep neural network framework written by .NET (C#). It has many highlighted features, such as automatic differentiation, many different types of encoders/decoders(Transformer, LSTM, BiLSTM and so on), multi-GPUs supported and so on.
+
+
+
+https://github.com/SciSharp/machinelearning
+https://github.com/dotnet/machinelearning
+ML.NET is an open source and cross-platform machine learning framework for .NET.
+
+
+
+https://github.com/SciSharp/Torch.NET
+.NET bindings for PyTorch. Machine Learning with C# / F# with Multi-GPU/CPU support
+
+
+
+Difference between pandas and tensorflow
+
+Pandas and TensorFlow are two widely used Python libraries for data analysis and machine learning, respectively.
+
+Pandas is primarily used for data manipulation, cleaning, and analysis, whereas TensorFlow is used for building and training machine learning models.
+
+Pandas provides data structures for efficiently handling data, including data frames and series, which are useful for data analysis and manipulation. Pandas also provides various functions and methods for performing operations on these data structures, such as filtering, merging, grouping, and transforming data.
+
+TensorFlow, on the other hand, is a powerful library for building machine learning models, including deep learning models. It provides a flexible platform for creating and training machine learning models, including various neural network architectures such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs). TensorFlow also provides APIs for distributed computing, making it easier to scale up training and inference for large datasets.
+
+In summary, while both libraries are useful for working with data, they have different focuses. Pandas is primarily used for data manipulation and analysis, while TensorFlow is used for building and training machine learning models.
+
+
+
+
+
+
+
+What's the difference between Tensorflow and PyTorch ?
+
+TensorFlow and PyTorch are both popular open-source machine learning frameworks. Here are some of the differences between them:
+
+Computational Graph: In TensorFlow, the computational graph is defined statically, which means the model architecture needs to be defined upfront and then compiled. In contrast, PyTorch uses a dynamic computational graph, which allows the user to change the graph on the fly during runtime, making it more flexible and easier to debug.
+
+Ease of use: PyTorch has a more pythonic feel and is often considered easier to learn and use compared to TensorFlow, which can be more verbose and has a steeper learning curve.
+
+Visualization: TensorFlow has an extensive visualization toolset through TensorBoard, which can be used to visualize graphs, loss curves, and other metrics during training. PyTorch, on the other hand, has limited visualization capabilities, and visualization needs to be done through external libraries.
+
+Deployment: TensorFlow has better support for deployment to production environments and has a wider range of deployment options, including serving models via TensorFlow Serving, TensorRT, and TFLite. PyTorch has recently released TorchServe, a model serving library that simplifies model deployment.
+
+Community: TensorFlow has a larger community compared to PyTorch, which makes it easier to find resources, tutorials, and help. PyTorch, however, has been rapidly growing and has a very active and supportive community.
+
+Ultimately, the choice between TensorFlow and PyTorch depends on the specific use case and personal preference. Both are powerful frameworks with their strengths and weaknesses, and choosing the right framework will depend on factors such as the nature of the problem, the size of the dataset, and the specific needs of the project.
+
+
+
+
+
+
+What's the difference between Gym and TensorFlow ?
+Gym and TensorFlow are two different tools used for different purposes in the field of machine learning.
+
+OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms. It provides an interface for simulating and interacting with environments that can be used to train and evaluate reinforcement learning algorithms. Gym includes a variety of pre-built environments, including classic control problems like the CartPole game, as well as Atari games and robotics tasks. Gym provides a standardized way to evaluate and compare different reinforcement learning algorithms, which makes it a popular choice for research in this area.
+
+TensorFlow, on the other hand, is a powerful machine learning library that is widely used for deep learning tasks, such as neural network training and inference. TensorFlow provides a flexible and scalable framework for building and deploying machine learning models. It includes a wide range of tools and APIs for tasks such as data preprocessing, model building, model training, and deployment. TensorFlow is used in a variety of applications, including computer vision, natural language processing, and speech recognition.
+
+While Gym and TensorFlow can both be used for machine learning tasks, they are designed for different purposes. Gym is focused on reinforcement learning and provides a set of pre-built environments for developing and evaluating reinforcement learning algorithms. TensorFlow is a general-purpose machine learning library that provides a wide range of tools and APIs for building and deploying machine learning models for a variety of applications.
+
+
+
+
+
+
+
+
+
+
+What can CherubNLP do ? 
+
+
+CherubNLP is an open-source natural language processing (NLP) library that provides a range of tools and functionalities for processing, analyzing, and understanding natural language text. Some of the things that CherubNLP can do include:
+
+Tokenization: splitting text into individual words or tokens
+Part-of-speech (POS) tagging: identifying the part of speech (noun, verb, adjective, etc.) of each word in a sentence
+Named entity recognition (NER): identifying and classifying named entities (such as people, organizations, and locations) in text
+Sentiment analysis: determining the sentiment or emotion expressed in a piece of text (positive, negative, or neutral)
+Topic modeling: identifying the topics or themes present in a collection of documents
+Text classification: categorizing text into predefined categories or classes
+Dependency parsing: identifying the syntactic relationships between words in a sentence
+Word embeddings: representing words as dense numerical vectors that capture their semantic meaning and relationship to other words
+CherubNLP is built on top of the popular NLP libraries such as spaCy and NLTK, and also integrates with other machine learning libraries like TensorFlow and PyTorch for building and training custom models.
