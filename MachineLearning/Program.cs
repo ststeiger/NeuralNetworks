@@ -1,13 +1,12 @@
 ﻿
-namespace SimpleNeuralNetworks
+namespace MachineLearning
 {
-    
-    
-    public class Program
+
+
+    internal class Program
     {
 
 
-        // See https://aka.ms/new-console-template for more information
         public static async System.Threading.Tasks.Task<System.ConsoleKeyInfo> GetKeyAsync()
         {
 
@@ -24,6 +23,7 @@ namespace SimpleNeuralNetworks
         } // End Task GetKeyAsync 
 
 
+        // See https://aka.ms/new-console-template for more information
         public static async System.Threading.Tasks.Task<int> Main(string[] args)
         {
             await System.Console.Out.WriteLineAsync(" --- Press any key to continue --- !");
