@@ -26,6 +26,9 @@ namespace MachineLearning
         // See https://aka.ms/new-console-template for more information
         public static async System.Threading.Tasks.Task<int> Main(string[] args)
         {
+            MySqlTokenizer.Test();
+            // MySqlParser.Test();
+
             await System.Console.Out.WriteLineAsync(" --- Press any key to continue --- !");
             await GetKeyAsync();
             return 0;
