@@ -26,7 +26,11 @@ namespace MachineLearning
         // See https://aka.ms/new-console-template for more information
         public static async System.Threading.Tasks.Task<int> Main(string[] args)
         {
-            MySqlTokenizer.Test();
+            await HeartBeatClient.TestAsync();
+
+            // CaesarCipher.Test();
+
+            // MySqlTokenizer.Test();
             // MySqlParser.Test();
 
             await System.Console.Out.WriteLineAsync(" --- Press any key to continue --- !");
