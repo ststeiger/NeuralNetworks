@@ -16,14 +16,14 @@ namespace MachineLearning
         public static IEdmModel GetEdmModel(string connectionString)
         {
 
-            ODataModelBuilder builder = new ODataConventionModelBuilder();
+            Microsoft.OData.ModelBuilder.ODataModelBuilder builder = new Microsoft.OData.ModelBuilder.ODataConventionModelBuilder();
 
             // builder.AddEntitySet("MyEntity", builder.AddEntityType(t));
 
             System.Collections.Generic.List<DatabaseSchema> schema = GetDatabaseSchema(connectionString);
             foreach (DatabaseSchema table in schema)
             {
-                EntityTypeConfiguration entityType = builder.AddEntityType(new TypeConfiguration(table.TableName));
+                Microsoft.OData.ModelBuilder.EntityTypeConfiguration entityType = builder.AddEntityType(new TypeConfiguration(table.TableName));
                 foreach (Column column in table.Columns)
                 {
                     Microsoft.OData.ModelBuilder.PrimitivePropertyConfiguration property = 
