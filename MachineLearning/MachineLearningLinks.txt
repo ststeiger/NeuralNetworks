@@ -1,0 +1,172 @@
+﻿https://www.theregister.com/2024/08/25/ai_pc_buying_guide/
+https://github.com/hoarder-app/hoarder?tab=readme-ov-file
+https://www.reddit.com/r/selfhosted/
+
+
+
+Completion Models: Predict the most likely continuation of a given text sequence.
+   Examples:
+ - Autocomplete in search engines and text editors.
+ - Generating code snippets.
+ - Writing stories or poems.
+
+Instruct Models: Follow instructions and complete tasks as specified by the user.
+Training: Built upon completion models, but with additional training data that emphasizes following instructions, 
+answering questions, and generating text that is relevant and helpful to the user.
+   Examples:
+ - Summarizing articles.
+ - Translating languages.
+ - Answering questions in a conversational way.
+
+
+Completion models are the foundation for many LLMs, 
+focusing on predicting the next likely words in a sequence.
+
+Instruct models build upon this foundation by learning to follow instructions 
+and generate more helpful and relevant outputs.
+
+Llama.cpp is a practical implementation that allows you to run these models locally, 
+providing more control and flexibility.
+
+
+GGML is a C library for machine learning, 
+specifically designed to enable efficient execution of large language models (LLMs) 
+on various hardware platforms, including CPUs and GPUs.
+GGML stands for Georgi Gerganov Machine Learning.
+Georgi Gerganov is the creator of the GGML library
+
+GBNF is short for "GGML BNF". BNF is short for Backus-Naur Form (BNF) 
+
+.safetensors: This format is primarily used within the Hugging Face ecosystem 
+and is designed for deep learning models, especially those using PyTorch or TensorFlow. 
+It focuses on security and efficiency for storing model weights (tensors).
+
+This format is designed for quantized models, particularly those used with the llama.cpp project 
+and similar tools for running large language models on consumer hardware (like CPUs). 
+Quantization is a technique to reduce the size of the model by using lower-precision numbers 
+(e.g., int8 instead of float32). GGUF is optimized for efficient inference on CPUs.
+
+
+.safetensors stores the original, higher-precision weights of the model. 
+GGUF stores quantized versions of these weights, which are smaller but may have slightly reduced accuracy.
+
+
+GGUF (GGML Universal File Format).
+
+You can't directly convert a .safetensors file to a GGUF file without performing quantization. 
+The process involves taking the original weights (usually in .safetensors or a similar format), 
+applying a quantization algorithm, and then saving the quantized weights in the GGUF format. 
+This is typically done using tools like llama.cpp or scripts specifically designed for quantization.
+
+.safetensors (or other original weight formats): Like a high-resolution photograph (lots of data, high quality).
+GGUF: Like a compressed JPEG or a thumbnail of that photograph (less data, good enough for many purposes, much smaller file size).
+
+
+ GGUF always involves quantization, which is the process of reducing the precision of the numbers representing the weights. This is a lossy process (some information is discarded), but it dramatically reduces the model size and improves inference speed on CPUs. .safetensors stores the original, high-precision weights and does not inherently involve quantization.
+
+
+if somebody gives you a gguf file, you already don't get the model weight, 
+but a compression of the model weights optimized for inference.
+
+
+Training Capabilities: GGUF files are designed for inference only. 
+You cannot directly use them for further training or fine-tuning of the model. 
+To do that, you would need the original model weights.
+
+
+GGUF is specifically optimized for efficient inference on CPUs. 
+The quantization allows for faster computations, leading to quicker response times.
+Because the models are smaller and use lower-precision numbers, they require less memory durin
+
+
+
+"Quantization aims to reduce the numerical precision of the data, which can lead to small changes in the represented values 
+(and thus potentially affect the model's output)."
+
+
+
+But so can the elimination of points on a polygon.
+
+If they are all more or less on a line, but not exactly, i can define a limit to where they are considered to be on the same line, thus quantized. while the shape of the polygon is altered a little, it is not meaningfully noticable.
+
+
+yea so quantization in ggfu for example is transfering float values into integer values, thereby altering their exact values, but kinda keeping the functionality of the network, accepting precision loss to achieve compression.
+
+
+
+https://docsbot.ai/models/compare/gemini-2-0-flash/gpt-4o-2024-11-20
+
+
+https://medium.com/binome/function-calling-with-local-llms-05fbd3fe66e4
+
+
+https://til.simonwillison.net/llms/llama-cpp-python-grammars
+https://github.com/ggerganov/llama.cpp/tree/master/grammars
+https://www.google.com/search?q=LlamaGrammars
+
+
+https://medium.com/@rushing_andrei/function-calling-with-open-source-llms-594aa5b3a304
+
+
+https://www.promptingguide.ai/applications/function_calling
+https://local-llm-function-calling.readthedocs.io/en/latest/
+
+
+
+
+https://github.com/rizerphe/local-llm-function-calling
+https://github.com/MeetKai/functionary
+
+
+
+https://allenai.org/blog/olmo2
+https://github.com/allenai/OLMo
+https://huggingface.co/datasets/allenai/dolma
+https://allenai.org/olmo
+
+
+https://www.reddit.com/r/LocalLLaMA/comments/158l28c/functionary_new_open_source_llm_that_can_execute/?rdt=44906
+
+
+
+
+An NVMe SSD with high read/write speeds 
+RAM: At least 16GB is recommended: 32GB or even 64GB is ideal for intensive AI workloads.
+CPU: Consider CPUs with integrated AI accelerators, such as 
+Intel's latest generations (13th and 14th) or 
+AMD Ryzen 7000 series 
+offer excellent performance for AI tasks.
+
+Discrete GPUs are crucial: 
+NVIDIA GeForce RTX 40 series or 
+AMD Radeon RX 7000 
+series GPUs provide the horsepower needed for demanding AI applications 
+like image generation and video editing.
+Look for GPUs with high VRAM: 
+More VRAM allows the GPU to handle larger AI models and datasets.
+
+Consider compatibility with AI development tools like TensorFlow, PyTorch, and others.
+
+
+
+
+
+Prioritize GPU: 
+If you're serious about deep learning with PyTorch or TensorFlow, 
+a dedicated GPU (like an NVIDIA GeForce RTX series card) 
+is essential for optimal performance and productivity.   
+CPU AI Acceleration as a Complement: CPU AI accelerators can provide a modest performance boost, 
+but they won't match the level of acceleration offered by a dedicated GPU.
+
+For Llama.cpp, GPU acceleration generally provides significantly better performance than CPU AI accelerators. 
+So basically, better invest in a better graphics card than into cpu ai acceleration.
+But if budget allows, go for both.
+
+
+
+
+
+https://ollama.com/
+https://github.com/ollama/ollama
+https://ollama.com/library
+
